@@ -1,0 +1,9 @@
+{
+  "watch": ["**/*.ts", "listeners"],
+  "ext": "ts,json",
+  "ignore": ["dist/*", "node_modules/*"],
+  "exec": "npm run build && node dist/app.js",
+  "signal": "SIGTERM"
+}
+
+
