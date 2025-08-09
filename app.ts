@@ -1,8 +1,8 @@
 import { App, LogLevel } from '@slack/bolt';
 import * as dotenv from 'dotenv';
-import registerListeners from './listeners';
-import slackLogger from './libs/logger';
 import printBanner from './libs/banner';
+import slackLogger from './libs/logger';
+import registerListeners from './listeners';
 
 dotenv.config();
 
@@ -23,7 +23,6 @@ registerListeners(app);
   try {
     await app.start(process.env.PORT || 3000);
     app.logger.info('⚡️ Bolt app is running! ⚡️');
-  
   } catch (error) {
     app.logger.error('Unable to start App', error);
   }

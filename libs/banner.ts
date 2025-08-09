@@ -5,7 +5,7 @@ export function printBanner(): void {
   console.log(
     chalk.green(
       figlet.textSync('MOKOKO', {
-        font: "3D-ASCII",
+        font: '3D-ASCII',
         horizontalLayout: 'default',
       }),
     ),
@@ -14,7 +14,7 @@ export function printBanner(): void {
   console.log(
     chalk.yellow(
       figlet.textSync('START !', {
-        font: "3D-ASCII",
+        font: '3D-ASCII',
         horizontalLayout: 'default',
       }),
     ),

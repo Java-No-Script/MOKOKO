@@ -1,5 +1,5 @@
-import pino, { type Logger as PinoLogger } from 'pino';
 import type { LogLevel, Logger as SlackLogger } from '@slack/logger';
+import pino, { type Logger as PinoLogger } from 'pino';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -89,5 +89,3 @@ const slackLogger: SlackLogger = {
 
 export { pinoLogger };
 export default slackLogger;
-
-

@@ -11,9 +11,15 @@ importers:
       '@slack/bolt':
         specifier: ^4.4.0
         version: 4.4.0(@types/express@5.0.3)
+      chalk:
+        specifier: ^5.5.0
+        version: 5.5.0
       dotenv:
         specifier: ~17.2.1
         version: 17.2.1
+      figlet:
+        specifier: ^1.8.2
+        version: 1.8.2
       pino:
         specifier: ^9.8.0
         version: 9.8.0
@@ -27,12 +33,6 @@ importers:
       '@types/figlet':
         specifier: ^1.7.0
         version: 1.7.0
-      chalk:
-        specifier: ^5.5.0
-        version: 5.5.0
-      figlet:
-        specifier: ^1.8.2
-        version: 1.8.2
       nodemon:
         specifier: ^3.1.10
         version: 3.1.10

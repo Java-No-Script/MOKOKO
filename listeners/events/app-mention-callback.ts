@@ -18,7 +18,7 @@ const appMentionCallback = async ({
     if (rootThreadTs) {
       const fetchAllReplies = async () => {
         const allMessages: any[] = [];
-        let cursor: string | undefined = undefined;
+        let cursor: string | undefined;
         // Slack API limit: 200 per page
         do {
           const res: any = await client.conversations.replies({
@@ -41,7 +41,7 @@ const appMentionCallback = async ({
       const combined = messages
         .filter((m) => typeof m.text === 'string' && m.text.trim().length > 0)
         .map((m) => {
-          const author = m.user ? `<@${m.user}>` : (m.bot_id ? 'bot' : 'unknown');
+          const author = m.user ? `<@${m.user}>` : m.bot_id ? 'bot' : 'unknown';
           return `- ${author}: ${m.text}`;
         })
         .join('\n');
