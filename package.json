@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.3",
+    "@slack/logger": "^4.0.0",
     "@types/figlet": "^1.7.0",
     "chalk": "^5.5.0",
     "figlet": "^1.8.2",
